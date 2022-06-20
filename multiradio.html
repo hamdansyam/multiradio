@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            function displayResult(buah){
+                document.getElementById("result").value=buah;
+            }
+            function displayAlert(){
+                var x=document.getElementById("result").value;
+                if(x==""){
+                    alert("Silakan pilih buah favoritmu!");
+                    form.buah[0].focus();
+                    return false;
+                }
+                else
+                alert(x+" adalah buah favoritmu");
+            }
+        </script>
+        <form action="">
+            <pre>
+            <input type="radio" name="buah" onclick="displayResult(this.value)" value="anggur">anggur
+            <input type="radio" name="buah" onclick="displayResult(this.value)" value="jeruk">jeruk
+
+            buah favorit kamu : <input type="text" id="result">
+            <button type="button" onclick="displayAlert()">lihat</button>
+            </pre>
+        </form>
+    </body>
+</html>
