@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function lihat(ty)
+    {
+        document.getElementById("result").value=ty;
+    }
+</script>
+<body>
+    <form name="ff">
+        <pre>
+            <input type="radio" name="ty" id="" value="wanita cantik" onclick="lihat(this.value)">wanita
+          
+            <input type="reset" name="" id="">
+            
+            lihat<input type="text" name="preview" id="result">
+        </pre>
+    </form>
+</body>
+</html>
